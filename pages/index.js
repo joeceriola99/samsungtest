@@ -22,37 +22,37 @@ export default function Home() {
           <input
             value="male"
             type="radio"
-            {...register("sex", { required: true })}
+            {...register("sex"})}
           />
           Male <br />
           <input
             value="female"
             type="radio"
-            {...register("sex", { required: true })}
+            {...register("sex")}
           />
           Female <br /> <br />
           <input
             type="checkbox"
             value="Java"
-            {...register("progLanguage", { required: true })}
+            {...register("progLanguage")}
           />
           Java
           <input
             type="checkbox"
             value="ReactJS"
-            {...register("progLanguage", { required: true })}
+            {...register("progLanguage")}
           />
           ReactJS
           <input
             type="checkbox"
             value="NextJS"
-            {...register("progLanguage", { required: true })}
+            {...register("progLanguage")}
           />
           NextJS
           <input
             type="checkbox"
             value="Python"
-            {...register("progLanguage", { required: true })}
+            {...register("progLanguage")}
           />
           Python <br /> <br />
           <input type="submit" />
