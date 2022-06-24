@@ -25,8 +25,14 @@ export default function Home() {
             {...register("sex", { required: true })}
           />
           Male <br />
-          <input value="female" type="radio" {...register("sex")} />
-          Female <br /> <br />
+          <input
+            value="female"
+            type="radio"
+            {...register("sex", { required: true })}
+          />
+          Female <br />
+          {errors.sex && <p>Please choose your Gender</p>}
+          <br />
           <input type="checkbox" value="Java" {...register("progLanguage")} />
           Java
           <input
